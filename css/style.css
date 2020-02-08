@@ -15,7 +15,7 @@
         margin: 0;
 
         /* TEST */
-        background: #000;
+        /* background: #000; */
     }
 
     body{
@@ -25,15 +25,15 @@
         font-size: 30px;
         line-height: 32px;
         color: #fff;
-        background: url(../images/background-lg.jpg) 50% 0 no-repeat;
+        background: url(../images/background-lg.jpg?v=1) 50% 0 no-repeat;
         background-size: auto 100%;
         outline: none;
         border:none;
 
         /* TEST */
-        width: 375px;
+        /* width: 375px;
         height: 667px;
-        margin: 30px auto;
+        margin: 30px auto; */
     }
 
     .left{
