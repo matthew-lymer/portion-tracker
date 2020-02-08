@@ -16,13 +16,16 @@
         $(".ball").on("click touch", function(){
             var id = $(this).data("ball");
 
+            var currentDate = new Date();
+            var expirationDate = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate()+1, 0, 0, 0);
+
             if( $(this).hasClass("on") ){
                 $(this).removeClass("on");
-                Cookies.set('ball-'+id, 0, { expires: 3, secure: false });
+                Cookies.set('ball-'+id, 0, { expires: expirationDate, secure: false });
             }
             else{
                 $(this).addClass("on");
-                Cookies.set('ball-'+id, 1, { expires: 3, secure: false });
+                Cookies.set('ball-'+id, 1, { expires: expirationDate, secure: false });
             }
         });
     });
